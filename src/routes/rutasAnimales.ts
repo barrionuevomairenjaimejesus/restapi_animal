@@ -211,13 +211,13 @@ class rutasAnimales {
 
     misRutas(){
         this._router.get('/', this.getAnimales)
-        this._router.get('/nuevo', this.animalnuevoPost)
+        this._router.post('/nuevo', this.animalnuevoPost)
      // this._router.get('/nuevoget/:nombre&:especie&:peso&:altura&:curado&:operaciones', this.animalnuevoget)
         this._router.get('/jaula/:nombre', this.jaula)
         this._router.get('/comida/:nombre', this.comida)
         this._router.get('/total/:nombre', this.total)
         this._router.get('/liberar/:nombre', this.liberarAnimal)
-        this._router.get('/actualizar/:nombre', this.actualiza)
+        this._router.post('/actualizar/:nombre', this.actualiza)
     }
 }
 
