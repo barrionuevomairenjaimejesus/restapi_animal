@@ -140,8 +140,8 @@ class rutasAnimales {
                 const f: any = new Animal(query._nombre, query._especie, 
                     query._peso, query._altura, query._curado,
                     query._operaciones)
-                res.json({"Nombre del animal": f._nombre, "Necesitaremos un total en comida de ": f.precioComida(),
-                          "Gastaremos en operaciones ": f.precioOperacion(), "En total necesitaríamos ": f.total()
+                res.json({"Nombre": f._nombre, "total_comida ": f.precioComida(),
+                          "total_operaciones ": f.precioOperacion(), "total ": f.total()
             })
             }
         })
